@@ -1,0 +1,5 @@
+/node_modules
+/backend/backend/__pycache__
+/backend/plans/__pycache__
+/backend/dexplan/__pycache__
+/backend/dexplan/migrations/__pycache__
