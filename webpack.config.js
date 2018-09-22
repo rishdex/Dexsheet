@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -7,6 +8,15 @@ module.exports = {
     path: path.join(__dirname, "/dist"),
     filename: "index_bundle.js"
   },
+  externals: {
+    jquery: 'jQuery',
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+    }),
+  ],
   module: {
     rules: [
       {

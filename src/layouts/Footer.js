@@ -6,7 +6,7 @@ export class Footer extends React.Component {
 
     render() {
         return (
-            <footer className="footer">
+            <footer className="footer outer">
                 <FooterButton name="" icon="fa fa-plus" />
                 <FooterButton name="" icon="fa fa-bars" border={true} />
                 <FooterButton name="Sheet1" border={true} expand={true} dropdown={true} />

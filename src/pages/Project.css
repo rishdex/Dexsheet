@@ -17,8 +17,3 @@
     font-size: 14px;
     color: rgb(56, 56, 56);
 }
-
-.table-container {
-    height: 400px;
-    overflow: auto;
-}

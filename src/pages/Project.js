@@ -1,5 +1,6 @@
 import React from 'react';
 import './Project.css'
+import $ from 'jquery';
 
 export class Project extends React.Component {
 
@@ -11,9 +12,28 @@ export class Project extends React.Component {
         }
     }
 
+    resize() {
+        window.setTimeout(function() {
+            let outer = 0;
+            $('.outer').each(function (i, item) {
+                outer += $(item).outerHeight();
+            })
+            let total = $(window).height();
+            let height = total - outer - 1;
+            $('.content-wrapper').height(height);
+        }, 1)
+    }
+
     componentDidMount() {
+        this.resize();
+        let self = this;
+        $(window).on('resize', function () {
+            self.resize();
+        })
+
         let data = [
             {
+                attachment: false,
                 task_name: 'Creating chart',
                 owned_by: 'Ganesh',
                 status: 'in progress',
@@ -22,6 +42,7 @@ export class Project extends React.Component {
                 to: '6/5/8',
                 comment: '',
             }, {
+                attachment: true,
                 task_name: 'Creating chart',
                 owned_by: 'Ganesh',
                 status: 'completed',
@@ -30,6 +51,7 @@ export class Project extends React.Component {
                 to: '4/5/8',
                 comment: 'Complete task',
             }, {
+                attachment: false,
                 task_name: 'Creating chart',
                 owned_by: 'Ganesh',
                 status: 'not started',
@@ -38,6 +60,7 @@ export class Project extends React.Component {
                 to: '6/5/8',
                 comment: 'Complete task',
             }, {
+                attachment: true,
                 task_name: 'Creating chart',
                 owned_by: 'Ganesh',
                 status: 'pending...',
@@ -46,6 +69,7 @@ export class Project extends React.Component {
                 to: '6/5/8',
                 comment: 'Complete task',
             }, {
+                attachment: true,
                 task_name: 'Creating chart',
                 owned_by: 'Ganesh',
                 status: '',
@@ -71,7 +95,11 @@ export class Project extends React.Component {
             row.percent_text = row.percent != null ? row.percent + '%' : '';
             tasks.push(
                 <tr key={'row-' + i}>
-                    <td align="center"><i className="fa fa-paperclip"></i></td>
+                    {row.attachment ?
+                        <td align="center"><i className="fa fa-paperclip"></i></td>
+                    :
+                        <td align="center" className="disabled"><i className="fa fa-paperclip"></i></td>
+                    }
                     <td align="center">{parseInt(i) + 1}</td>
                     <td>{row.task_name}</td>
                     <td>{row.owned_by}</td>

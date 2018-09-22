@@ -8,3 +8,11 @@ body {
 .pull-right {
     text-align: right;
 }
+
+.content-wrapper {
+    overflow: auto;
+}
+
+.disabled i {
+    color: lightgrey;
+}

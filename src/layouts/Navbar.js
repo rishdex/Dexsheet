@@ -5,7 +5,7 @@ import { NavbarButton } from '../components/NavbarButton';
 export class Navbar extends React.Component {
     render() {
         return (
-            <div className="dex-navbar">
+            <div className="dex-navbar outer">
                 <NavbarButton name="All" />
                 <NavbarButton name="" icon="fa fa-th-large" border={true} />
                 <NavbarButton name="Weekly Sales" border={true} expand={true} active={true} />

@@ -6,7 +6,7 @@ export class Toolbar extends React.Component {
 
     render() {
         return (
-            <div className="toolbar">
+            <div className="toolbar outer">
                 <ToolbarButton name="" icon="fa fa-save" />
                 <ToolbarButton name="" icon="fa fa-print" />
                 <label className="tool-divider"></label>

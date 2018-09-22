@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Project } from "./pages/Project";
 import { Header } from "./layouts/Header";
 import { Navbar } from "./layouts/Navbar";
-import { Filebar } from "./components/Filebar";
+import { Filebar } from "./layouts/Filebar";
 import { Toolbar } from "./layouts/Toolbar";
 import { Footer } from "./layouts/Footer";
 
