@@ -82,7 +82,7 @@ def seed(request):
         for i in range(count):
             project = Project()
             project.user = user
-            project.name = seeder.faker.word()
+            project.name = seeder.faker.name()
             project.save()
     
     print(str(Project.objects.count()) + " projects created")
@@ -149,7 +149,7 @@ def seed(request):
             task = Task()
             task.user = user
             task.sheet = randomSheet()
-            task.name = seeder.faker.text()
+            task.name = seeder.faker.name()
             task.completion = random.randint(0, 100)
             task.start_date = seeder.faker.date_time()
             task.due_date = seeder.faker.date_time()
