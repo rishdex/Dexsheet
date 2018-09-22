@@ -5,7 +5,7 @@ export class Project extends React.Component {
     render() {
         return (
             <div>
-                Project
+                Creating chart
             </div>
         )
     }

@@ -1,0 +1,37 @@
+.header {
+    padding: 2px 20px 2px 20px;
+    background: white;
+    border-bottom: 1px solid #E6EAED;
+}
+
+.share-button {
+    background: #398AFF;
+    border: none;
+    color: white;
+    font-size: 12px;
+    margin-left: 20px;
+    padding: 2px 10px;
+    vertical-align: bottom;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    vertical-align: bottom;
+    padding: 1px 0 0 0;
+    margin-left: 45px;
+    color: #A2A8C4;
+    font-size: 14px;
+}
+
+.user-icon {
+    background: none;
+    border: none;
+    vertical-align: bottom;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.user-icon img {
+    border-radius: 10px;
+}
