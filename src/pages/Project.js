@@ -25,12 +25,7 @@ export class Project extends React.Component {
     }
 
     componentDidMount() {
-        this.resize();
-        let self = this;
-        $(window).on('resize', function () {
-            self.resize();
-        })
-
+        
         let data = [
             {
                 attachment: false,
@@ -83,8 +78,16 @@ export class Project extends React.Component {
         for(let i=0; i<20; i++) {
             data.push({});
         }
-
         this.setState({data: data});
+    }
+
+    componentDidUpdate() {
+        let self = this;
+        $(window).on('resize', function () {
+            self.resize();
+        })
+
+        self.resize();
     }
 
 
