@@ -5,7 +5,7 @@ import { MemberButton } from '../components/MemberButton';
 export class Header extends React.Component {
     render() {
         return (
-            <div className="header">
+            <header className="header">
                 <div className="row">
                     <div className="col-md-2">
                         <img src="/public/assets/img/logo.png" width="25px" />
@@ -23,7 +23,7 @@ export class Header extends React.Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </header>
         )
     }
 }
