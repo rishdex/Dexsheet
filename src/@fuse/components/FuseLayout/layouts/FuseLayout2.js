@@ -81,8 +81,7 @@ const styles = theme => ({
             flex     : '0 1 auto',
             height   : 64,
             minHeight: 64
-        },
-        backgroundColor: 'white'
+        }
     },
     navbarHeader       : {
         display: 'flex',
