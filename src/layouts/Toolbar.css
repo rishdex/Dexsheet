@@ -1,0 +1,16 @@
+.toolbar {
+    padding: 1px 15px 0 15px;
+    background: white;
+    border-top: 1px solid #E6EAED;
+    border-bottom: 1px solid #E6EAED;
+}
+
+.tool-divider {
+    width: 1px;
+    height: 30px;
+    vertical-align: middle;
+    margin-bottom: 0;
+    margin-left: 10px;
+    border-right: 1px solid #E6EAED;
+    margin-right: 10px;
+}

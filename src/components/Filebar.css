@@ -11,11 +11,11 @@
 }
 
 .navbar {
-    padding: 0 15px;
+    padding: 0 12px;
 }
 
 .dropdown-menu {
-    margin-top: -3px;
+    margin-top: -1px;
 }
 
 .nav-link.dropdown-toggle::after {
@@ -32,4 +32,9 @@
 
 .dropdown-menu a:active {
     color: rgb(77, 77, 77);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 5px 12px 3px 12px !important;
+    color: #747474;
 }
