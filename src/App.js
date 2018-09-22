@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Project } from "./pages/Project";
 import { Header } from "./layouts/Header";
 import { Navbar } from "./layouts/Navbar";
+import { Filebar } from "./components/Filebar";
 
 export const ProjectView = () => (<Project />);
 
@@ -14,6 +15,7 @@ class App extends Component {
         <div className="App">
           <Header />
           <Navbar />
+          <Filebar />
           <div className="content-wrapper">
             <Route exact path="/" component={ProjectView} />
           </div>
