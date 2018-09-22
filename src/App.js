@@ -6,6 +6,7 @@ import { Header } from "./layouts/Header";
 import { Navbar } from "./layouts/Navbar";
 import { Filebar } from "./components/Filebar";
 import { Toolbar } from "./layouts/Toolbar";
+import { Footer } from "./layouts/Footer";
 
 export const ProjectView = () => (<Project />);
 
@@ -21,6 +22,7 @@ class App extends Component {
           <div className="content-wrapper">
             <Route exact path="/" component={ProjectView} />
           </div>
+          <Footer />
         </div>
       </Router>
     );

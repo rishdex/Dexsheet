@@ -98,7 +98,7 @@ export class Project extends React.Component {
         }
 
         return (
-            <div>
+            <div className="table-container">
                 <table className="table table-bordered task-table">
                     <thead>
                         <tr>
@@ -111,10 +111,10 @@ export class Project extends React.Component {
                             <th>From</th>
                             <th>To</th>
                             <th>Comments</th>
-                            <th>B</th>
-                            <th>C</th>
-                            <th>D</th>
-                            <th>E</th>
+                            <th width="150px">B</th>
+                            <th width="150px">C</th>
+                            <th width="150px">D</th>
+                            <th width="150px">E</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -1,0 +1,28 @@
+.footer-button {
+    background: none;
+    border: none;
+    color: rgb(116, 116, 116);
+    font-size: 14px;
+    padding: 4px 10px;
+}
+
+.footer-button i {
+    font-size: 12px;
+}
+
+.footer-button.border-right {
+    border-right: 1px solid #E6EAED;
+}
+
+.footer-button:hover {
+    background: rgb(212, 212, 212);
+    cursor: pointer;
+}
+
+.footer-button.expand {
+    padding: 4px 20px;
+}
+
+.footer-button.active {
+    background: white;
+}

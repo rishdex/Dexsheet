@@ -1,5 +1,6 @@
 .task-table {
     border: none !important;
+    width: max-content;
 }
 
 .task-table th {
@@ -7,10 +8,17 @@
     font-size: 14px;
     border-top: none !important;
     border-bottom: none !important;
+    color: rgb(66, 66, 66);
 }
 
 .task-table td {
     background: white;
     padding: 4px 5px;
     font-size: 14px;
+    color: rgb(56, 56, 56);
+}
+
+.table-container {
+    height: 400px;
+    overflow: auto;
 }
