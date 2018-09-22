@@ -1,0 +1,16 @@
+.task-table {
+    border: none !important;
+}
+
+.task-table th {
+    padding: 8px 5px;
+    font-size: 14px;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.task-table td {
+    background: white;
+    padding: 4px 5px;
+    font-size: 14px;
+}
