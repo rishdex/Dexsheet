@@ -37,14 +37,16 @@ const styles = theme => ({
         zIndex                      : 4
     },
     navbarWrapper      : {
-        boxShadow: theme.shadows[3],
-        zIndex   : 6
+        boxShadow: 'none',
+        borderBottom: '1px solid lightgrey',
+        zIndex   : 6,
     },
-    navbarPaperWrapper : {},
+    navbarPaperWrapper : {
+    },
     navbar             : {
         display   : 'flex',
         overflow  : 'hidden',
-        height    : 64,
+        height    : '40px !important',
         zIndex    : 6,
         alignItems: 'center'
     },

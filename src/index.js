@@ -13,7 +13,6 @@ import {Provider} from 'react-redux';
 import {Router} from 'react-router-dom';
 import {routes} from './fuse-configs/fuseRoutesConfig';
 import {FuseLayout, FuseTheme, FuseAuthorization} from '@fuse';
-import MainToolbar from './main/MainToolbar';
 import MainNavbarContent from './main/MainNavbarContent';
 import MainNavbarHeader from './main/MainNavbarHeader';
 import MainFooter from './main/MainFooter';
@@ -39,9 +38,6 @@ ReactDOM.render(
                         <FuseTheme>
                             <FuseLayout
                                 routes={routes}
-                                toolbar={
-                                    <MainToolbar/>
-                                }
                                 navbarHeader={
                                     <MainNavbarHeader/>
                                 }
