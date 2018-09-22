@@ -20,5 +20,10 @@
 }
 
 .navbar-button.expand {
-    padding: 4px 25px;
+    padding: 4px 20px;
+}
+
+.navbar-button.active {
+    color: white;
+    background: #398AFF;
 }
