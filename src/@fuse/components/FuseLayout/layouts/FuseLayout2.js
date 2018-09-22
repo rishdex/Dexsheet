@@ -38,7 +38,7 @@ const styles = theme => ({
     },
     navbarWrapper      : {
         boxShadow: 'none',
-        borderBottom: '1px solid lightgrey',
+        borderBottom: '1px solid #E6EAED',
         zIndex   : 6,
     },
     navbarPaperWrapper : {
