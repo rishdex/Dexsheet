@@ -1,6 +1,7 @@
 .task-table {
     border: none !important;
     width: max-content;
+    margin: 0;
 }
 
 .task-table th {
@@ -16,4 +17,9 @@
     padding: 4px 5px;
     font-size: 14px;
     color: rgb(56, 56, 56);
+}
+
+.task-table td:hover {
+    cursor: cell;
+    background: rgb(238, 238, 238);
 }

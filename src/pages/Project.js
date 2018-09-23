@@ -124,6 +124,8 @@ export class Project extends React.Component {
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             )
         }
@@ -146,6 +148,8 @@ export class Project extends React.Component {
                             <th width="150px">C</th>
                             <th width="150px">D</th>
                             <th width="150px">E</th>
+                            <th width="150px">F</th>
+                            <th width="150px">G</th>
                         </tr>
                     </thead>
                     <tbody>
