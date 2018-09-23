@@ -9,10 +9,6 @@ body {
     text-align: right;
 }
 
-.content-wrapper {
-    overflow: auto;
-}
-
 .disabled i {
     color: lightgrey;
 }
@@ -36,4 +32,8 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
+}
+
+table {
+    border-spacing: 0;
 }

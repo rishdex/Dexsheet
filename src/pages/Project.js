@@ -1,6 +1,7 @@
 import React from 'react';
 import './Project.css'
 import $ from 'jquery';
+import {Attachment} from '../layouts/Attachment'
 
 export class Project extends React.Component {
 
@@ -19,8 +20,11 @@ export class Project extends React.Component {
                 outer += $(item).outerHeight();
             })
             let total = $(window).height();
-            let height = total - outer - 1;
-            $('.content-wrapper').height(height);
+            let height = total - outer;
+            $('.content-wrapper, .table-container').height(height);
+            let width = $(window).width();
+            width -= $('.attachment-container').width();
+            $('.table-container').width(width);
         }, 1)
     }
 
@@ -131,31 +135,45 @@ export class Project extends React.Component {
         }
 
         return (
-            <div className="table-container">
-                <table className="table table-bordered task-table">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th></th>
-                            <th>Task Name</th>
-                            <th>Owned by</th>
-                            <th>Status</th>
-                            <th>% Completed</th>
-                            <th>From</th>
-                            <th>To</th>
-                            <th>Comments</th>
-                            <th width="150px">B</th>
-                            <th width="150px">C</th>
-                            <th width="150px">D</th>
-                            <th width="150px">E</th>
-                            <th width="150px">F</th>
-                            <th width="150px">G</th>
-                        </tr>
-                    </thead>
+            <div>
+                <table>
                     <tbody>
-                        {tasks}
+                        <tr>
+                            <td className="content-cell">
+                                <div className="table-container">
+                                    <table className="table table-bordered task-table">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                                <th>Task Name</th>
+                                                <th>Owned by</th>
+                                                <th>Status</th>
+                                                <th>% Completed</th>
+                                                <th>From</th>
+                                                <th>To</th>
+                                                <th>Comments</th>
+                                                <th width="150px">B</th>
+                                                <th width="150px">C</th>
+                                                <th width="150px">D</th>
+                                                <th width="150px">E</th>
+                                                <th width="150px">F</th>
+                                                <th width="150px">G</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {tasks}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                            <td className="content-cell">
+                                <Attachment />
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
+                
             </div>
         )
     }
