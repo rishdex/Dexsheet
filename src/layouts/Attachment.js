@@ -16,7 +16,7 @@ export class Attachment extends React.Component {
                             <tr>
                                 <td><i className="fa fa-angle-left"></i></td>
                                 <td>
-                                    <img src="/public/assets/img/logo.png" />
+                                    <img src="/assets/img/logo.png" />
                                 </td>
                                 <td><i className="fa fa-angle-right"></i></td>
                             </tr>
