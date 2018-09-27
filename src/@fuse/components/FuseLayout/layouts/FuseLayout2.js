@@ -117,7 +117,7 @@ const styles = theme => ({
         position: 'relative',
         zIndex  : 5,
         borderTop: '1px solid #E6EAED',
-        height: 35,
+        height: 33,
         boxShadow: 'none',
         background: '#F8FAFF'
     },
