@@ -3,7 +3,7 @@ import {withStyles} from '@material-ui/core/styles/index';
 import {connect} from 'react-redux';
 import * as quickPanelActions from 'main/quickPanel/store/actions';
 import {bindActionCreators} from 'redux';
-import { ProjectSelect } from './layouts/ProjectSelect';
+import { ProjectBar } from './layouts/ProjectBar';
 import './MainToolbar.css'
 import { FileBar } from './layouts/FileBar';
 import { ToolBar } from './layouts/ToolBar';
@@ -17,7 +17,7 @@ class MainToolbar extends Component {
     {
         return (
             <div className="toolbar">
-                <ProjectSelect />
+                <ProjectBar />
                 <FileBar />
                 <ToolBar />
             </div>

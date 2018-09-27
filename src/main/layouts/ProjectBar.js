@@ -1,9 +1,9 @@
 import React from 'react';
-import './ProjectSelect.css'
+import './ProjectBar.css'
 import { ProjectButton } from '../components/ProjectButton';
 
 
-export class ProjectSelect extends React.Component {
+export class ProjectBar extends React.Component {
 
     render() {
         return (

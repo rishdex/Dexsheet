@@ -1,0 +1,17 @@
+.task-table {
+    width: max-content;
+}
+
+.task-table td {
+    border: 1px solid lightgrey !important;
+    padding: 10px;
+    background: white;
+}
+
+.task-table th {
+    border: 1px solid lightgrey !important;
+    padding: 10px;
+    background: none;
+    text-align: center;
+    background: #F8FAFF;
+}
