@@ -21,7 +21,8 @@ const styles = theme => ({
         transition: theme.transitions.create(['width', 'height'], {
             duration: theme.transitions.duration.shortest,
             easing  : theme.transitions.easing.easeInOut
-        })
+        }),
+        marginLeft: 10
     }
 });
 
