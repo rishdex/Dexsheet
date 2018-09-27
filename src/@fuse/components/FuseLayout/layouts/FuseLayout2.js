@@ -107,7 +107,7 @@ const styles = theme => ({
         position: 'relative',
         zIndex  : 5,
         borderBottom: '1px solid #E6EAED',
-        boxShadow: 'none'
+        boxShadow: 'none',
     },
     toolbar            : {
         display: 'flex',

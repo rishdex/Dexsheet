@@ -1,6 +1,7 @@
 .project-button {
     padding: 7px 13px;
     border-right: 1px solid #E6EAED;
+    color: rgb(78, 78, 78);
 }
 
 .project-button:hover {

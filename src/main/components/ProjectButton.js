@@ -24,7 +24,7 @@ export class ProjectButton extends React.Component {
                     <img src={"/assets/svg/" + this.props.icon} alt="" />
                     : null}
                 {this.props.name}
-                {this.props.active == 'active' ?
+                {this.props.active === 'active' ?
                     <img src={"/assets/svg/arrow_1.svg"} className="dropdown-icon" alt="" />
                     : null}
             </button>

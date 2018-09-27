@@ -5,6 +5,7 @@ import * as quickPanelActions from 'main/quickPanel/store/actions';
 import {bindActionCreators} from 'redux';
 import { ProjectSelect } from './layouts/ProjectSelect';
 import './MainToolbar.css'
+import { FileBar } from './layouts/FileBar';
 
 const styles = theme => ({
 });
@@ -16,6 +17,8 @@ class MainToolbar extends Component {
         return (
             <div className="toolbar">
                 <ProjectSelect />
+                <FileBar />
+                <FileBar />
             </div>
         );
     }
