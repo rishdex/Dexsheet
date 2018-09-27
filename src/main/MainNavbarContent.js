@@ -59,20 +59,7 @@ function MainNavbar({classes, navigation, layoutStyle, user})
     const navigationLayout = FuseLayouts[layoutStyle].type;
     return (
         <div className={classes.root}>
-            {navigationLayout === 'vertical' ? (
-                <React.Fragment>
-                    <UserHeader/>
-                    <FuseNavigation navigation={navigation} layout={navigationLayout}/>
-                </React.Fragment>
-            ) : (
-                <React.Fragment>
-                    <Hidden lgUp>
-                        <UserHeader/>
-                    </Hidden>
-                    <FuseNavigation navigation={navigation} layout={navigationLayout}/>
-                </React.Fragment>
-            )}
-
+            
         </div>
     );
 }

@@ -1,6 +1,6 @@
 const fuseSettingsConfig = {
     layout          : {
-        style : 'layout1',
+        style : 'layout2',
         config: {
             scroll : 'content',
             navbar : {
@@ -22,7 +22,7 @@ const fuseSettingsConfig = {
                 display : true,
             },
             rightSidePanel : {
-                display : true,
+                display : false,
             },
             mode   : 'fullwidth'
         }
@@ -30,9 +30,9 @@ const fuseSettingsConfig = {
     customScrollbars: true,
     theme           : {
         main   : 'default',
-        navbar : 'mainThemeDark',
+        navbar : 'mainThemeLight',
         toolbar: 'mainThemeLight',
-        footer : 'mainThemeDark'
+        footer: 'mainThemeLight'
     }
 };
 

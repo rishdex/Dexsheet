@@ -1,7 +1,6 @@
 import React from 'react';
-import {Typography} from '@material-ui/core';
 import {withStyles} from '@material-ui/core/styles/index';
-import classNames from 'classnames';
+import './MainFooter.css'
 
 const styles = theme => ({
     root: {}
@@ -10,8 +9,8 @@ const styles = theme => ({
 function MainFooter({classes})
 {
     return (
-        <div className={classNames(classes.root, "flex flex-1 items-center px-24")}>
-            <Typography>Footer</Typography>
+        <div className="footer">
+            Footer
         </div>
     );
 }

@@ -24,7 +24,7 @@ const styles = theme => ({
         '&.boxed'    : {
             maxWidth : 1280,
             margin   : '0 auto',
-            boxShadow: theme.shadows[3]
+            boxShadow: theme.shadows[2]
         }
     },
     content            : {
@@ -37,14 +37,15 @@ const styles = theme => ({
         zIndex                      : 4
     },
     navbarWrapper      : {
-        boxShadow: theme.shadows[3],
+        boxShadow: 'none',
+        borderBottom: '1px solid #E6EAED',
         zIndex   : 6
     },
     navbarPaperWrapper : {},
     navbar             : {
         display   : 'flex',
         overflow  : 'hidden',
-        height    : 64,
+        height    : 35,
         zIndex    : 6,
         alignItems: 'center'
     },
@@ -80,8 +81,8 @@ const styles = theme => ({
         [theme.breakpoints.down('md')]: {
             flex     : '0 1 auto',
             height   : 64,
-            minHeight: 64
-        }
+        },
+        background: 'white'
     },
     navbarHeader       : {
         display: 'flex',
@@ -104,7 +105,9 @@ const styles = theme => ({
     toolbarWrapper     : {
         display : 'flex',
         position: 'relative',
-        zIndex  : 5
+        zIndex  : 5,
+        borderBottom: '1px solid #E6EAED',
+        boxShadow: 'none'
     },
     toolbar            : {
         display: 'flex',
@@ -112,7 +115,11 @@ const styles = theme => ({
     },
     footerWrapper      : {
         position: 'relative',
-        zIndex  : 5
+        zIndex  : 5,
+        borderTop: '1px solid #E6EAED',
+        height: 35,
+        boxShadow: 'none',
+        background: '#F8FAFF'
     },
     footer             : {
         display: 'flex',
