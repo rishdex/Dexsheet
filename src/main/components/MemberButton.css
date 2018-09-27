@@ -1,0 +1,37 @@
+.member-button {
+    margin-right: 10px;
+    border-bottom: 3px solid lightgrey;
+}
+
+.member-button label {
+    background: lightgrey;
+    padding: 2px 0;
+    width: 20px;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.member-button.orange {
+    border-color: #FE7955;
+}
+
+.member-button.orange label {
+    background: #FE7955;
+}
+
+.member-button.blue {
+    border-color: #39C9FF;
+}
+
+.member-button.blue label {
+    background: #39C9FF;
+}
+
+.member-button.green {
+    border-color: #00D695;
+}
+
+.member-button.green label {
+    background: #00D695;
+}

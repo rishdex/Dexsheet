@@ -1,0 +1,28 @@
+.share-button {
+    border-radius: 0;
+    font-size: 12px;
+    padding: 3px 12px;
+    outline-width: 0;
+    vertical-align: bottom;
+    margin-left: 10px;
+}
+
+.share-button img {
+    margin-right: 5px;
+    width: 10px;
+    margin-top: -1px;
+}
+
+.notification-button {
+    margin-left: 60px;
+    vertical-align: unset;
+}
+
+.user-button {
+    margin-left: 20px;
+}
+
+.user-button img {
+    width: 25px;
+    border-radius: 13px;
+}

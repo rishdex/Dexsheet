@@ -45,7 +45,7 @@ const styles = theme => ({
     navbar             : {
         display   : 'flex',
         overflow  : 'hidden',
-        height    : 35,
+        height    : 32,
         zIndex    : 6,
         alignItems: 'center'
     },

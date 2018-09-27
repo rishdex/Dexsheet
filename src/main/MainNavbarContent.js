@@ -1,65 +1,36 @@
 import React from 'react';
-import {withStyles, AppBar, Typography, Avatar, Hidden} from '@material-ui/core';
+import {withStyles} from '@material-ui/core';
 import {withRouter} from 'react-router-dom';
-import {FuseNavigation, FuseLayouts} from '@fuse';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import classNames from 'classnames';
+import { MemberButton } from './components/MemberButton';
+import './MainNavbarContent.css'
 
 const styles = theme => ({
     root  : {
-        '& .user': {
-            '& .username, & .email': {
-                transition: theme.transitions.create('opacity', {
-                    duration: theme.transitions.duration.shortest,
-                    easing  : theme.transitions.easing.easeInOut
-                })
-            }
-        }
+        paddingRight: 30
     },
-    avatar: {
-        width     : 72,
-        height    : 72,
-        position  : 'absolute',
-        top       : 92,
-        padding   : 8,
-        background: theme.palette.background.default,
-        boxSizing : 'content-box',
-        left      : '50%',
-        transform : 'translateX(-50%)',
-        '& > img' : {
-            borderRadius: '50%'
-        }
-    }
 });
 
 
-function MainNavbar({classes, navigation, layoutStyle, user})
+function MainNavbar({classes})
 {
-    function UserHeader()
-    {
-        return (
-            <AppBar
-                position="static"
-                color="primary"
-                elevation={0}
-                className="user relative flex flex-col items-center justify-center pt-24 pb-64 mb-32 z-0"
-            >
-                <Typography className="username text-16 whitespace-no-wrap" color="inherit">{user.data.displayName}</Typography>
-                <Typography className="email text-13 mt-8 opacity-50 whitespace-no-wrap" color="inherit">{user.data.email}</Typography>
-                <Avatar
-                    className={classNames(classes.avatar, "avatar")}
-                    alt="user photo"
-                    src={user.data.photoURL && user.data.photoURL !== '' ? user.data.photoURL : "assets/images/avatars/profile.jpg"}
-                />
-            </AppBar>
-        );
-    }
-
-    const navigationLayout = FuseLayouts[layoutStyle].type;
     return (
         <div className={classes.root}>
-            
+            <div className="pull-right">
+                <MemberButton character="L" />
+                <MemberButton character="A" />
+                <MemberButton character="M" />
+                <button className="btn btn-primary share-button">
+                    <img src="/assets/svg/share.svg" alt="" />Share
+                </button>
+                <button className="notification-button">
+                    <img src="/assets/svg/notification.svg" alt="" />
+                </button>
+                <button className="user-button">
+                    <img src="/assets/img/avatar.jpg" alt="" />
+                </button>
+            </div>
         </div>
     );
 }
@@ -73,8 +44,6 @@ function mapStateToProps({fuse, auth})
 {
     return {
         navigation : fuse.navigation,
-        layoutStyle: fuse.settings.current.layout.style,
-        user       : auth.user
     }
 }
 

@@ -65,3 +65,12 @@ a[role=button] {
 @import 'prism.css';
 
 @import 'fuse-helpers.css';
+
+@font-face {
+    font-family: Roboto;
+    src: url("/assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+* {
+    font-family: Roboto;
+}
