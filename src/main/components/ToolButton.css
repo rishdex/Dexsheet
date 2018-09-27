@@ -1,0 +1,23 @@
+.tool-button {
+    width: 35px;
+    height: 35px;
+    color: rgb(95, 95, 95);
+    vertical-align: bottom;
+}
+
+.tool-button:hover {
+    background: rgb(233, 233, 233);
+}
+
+.tool-button .tool-carcet {
+    margin-left: 5px;
+}
+
+.tool-button.small .tool-icon {
+    width: 16px;
+    margin-top: 2px;
+}
+
+.tool-button.dropdown {
+    width: 50px;
+}

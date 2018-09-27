@@ -6,6 +6,7 @@ import {bindActionCreators} from 'redux';
 import { ProjectSelect } from './layouts/ProjectSelect';
 import './MainToolbar.css'
 import { FileBar } from './layouts/FileBar';
+import { ToolBar } from './layouts/ToolBar';
 
 const styles = theme => ({
 });
@@ -18,7 +19,7 @@ class MainToolbar extends Component {
             <div className="toolbar">
                 <ProjectSelect />
                 <FileBar />
-                <FileBar />
+                <ToolBar />
             </div>
         );
     }

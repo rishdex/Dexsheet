@@ -1,0 +1,20 @@
+.tool-bar {
+    width: 100%;
+    padding-left: 20px;
+    background: white;
+}
+
+.tool-seperator {
+    border-right: 1px solid #E6EAED;
+    margin: 0 10px;
+    vertical-align: bottom;
+    height: 35px;
+}
+
+.tool-seperator.left-0 {
+    margin-left: -1px;
+}
+
+.tool-seperator.right-0 {
+    margin-right: 0;
+}
